@@ -27,15 +27,11 @@
           display: flex;
           align-items: center;
           background-color: #1e3a8a;
-          /* Gunakan format URL di bawah ini */
           background-image: linear-gradient(rgba(15, 23, 42, 0.8), rgba(15, 23, 42, 0.8)), 
             url('https://lh3.googleusercontent.com/d/1BVYu7Cc2wbHUgLChRp_QTlheg9Sa2FHL=w1200?authuser=0');
           background-size: cover;
           background-position: center;
         }
-
-
-
 
         .float-wa {
             position: fixed;
@@ -65,11 +61,11 @@
     <nav class="bg-white/95 backdrop-blur-md shadow-sm sticky top-0 z-50">
         <div class="container mx-auto px-4 py-4 flex justify-between items-center">
             <div class="flex items-center space-x-3">
-  <img 
-    src="https://drive.google.com/thumbnail?id=1RvKQMFfXIDNVGSEIBZgU1-dL9ygtQFLY&sz=w500" 
-    alt="Logo Zona Aki" 
-    class="h-10 md:h-12 w-auto object-contain"
-  >
+              <img 
+                src="https://drive.google.com/thumbnail?id=1RvKQMFfXIDNVGSEIBZgU1-dL9ygtQFLY&sz=w500" 
+                alt="Logo Zona Aki" 
+                class="h-10 md:h-12 w-auto object-contain"
+              >
                 <div class="flex flex-col">
                     <span class="text-xl md:text-2xl font-black text-blue-900 leading-none">ZONA AKI <span class="text-red-600">MURAH</span></span>
                     <span class="text-[10px] uppercase tracking-[0.2em] font-bold text-slate-500">Emergency 24 Hours Service</span>
@@ -78,12 +74,13 @@
             
             <div class="hidden lg:flex space-x-8 font-bold text-sm text-slate-600">
                 <a href="#beranda" class="hover:text-blue-700 transition">Beranda</a>
+                <a href="#promo" class="text-red-600 hover:text-red-700 transition">Promo Spesial</a>
                 <a href="#produk" class="hover:text-blue-700 transition">Kategori Aki</a>
                 <a href="#ulasan" class="hover:text-blue-700 transition">Ulasan</a>
                 <a href="#kontak" class="hover:text-blue-700 transition">Lokasi</a>
             </div>
 
-            <a href="https://wa.me/6285797475807" class="bg-green-500 hover:bg-green-600 text-white px-6 py-2.5 rounded-full font-bold transition shadow-md flex items-center group">
+            <a href="https://wa.me/6285797475807?text=Halo%20saya%20mau%20tanya%20promo%20aki" class="bg-green-500 hover:bg-green-600 text-white px-6 py-2.5 rounded-full font-bold transition shadow-md flex items-center group">
                 <i class="fab fa-whatsapp mr-2 text-lg group-hover:rotate-12 transition"></i> Hubungi Kami
             </a>
         </div>
@@ -92,15 +89,31 @@
     <section id="beranda" class="hero-section text-white px-4">
         <div class="container mx-auto">
             <div class="max-w-4xl">
-                <div class="inline-block bg-red-600 text-[10px] md:text-xs font-bold px-3 py-1 rounded-full mb-6 uppercase tracking-widest">Pusat Aki No. 1 Ciayumajakuning</div>
+                <div class="inline-block bg-red-600 text-[10px] md:text-xs font-bold px-3 py-1 rounded-full mb-6 uppercase tracking-widest">Pusat Aki Paling Murah Se-Cirebon</div>
                 <h1 class="text-4xl md:text-7xl font-extrabold mb-6 leading-[1.1]">
-                    Ganti Aki Tanpa <span class="text-yellow-400">Ribet,</span> Tanpa <span class="text-yellow-400">Mahal!</span>
+                    Ganti Aki Tanpa <span class="text-yellow-400">Ribet,</span> Dijamin <span class="text-yellow-400">Paling Murah Se-Cirebon!</span>
                 </h1>
-                <p class="text-lg md:text-2xl mb-10 text-slate-200 leading-relaxed max-w-2xl">
-                    Satu-satunya jasa ganti aki 24 jam di <strong>Cirebon, Majalengka, & Kuningan</strong> yang berani kasih harga jujur, respon kilat, dan teknisi ahli.
+                <p class="text-lg md:text-2xl mb-8 text-slate-200 leading-relaxed max-w-2xl">
+                    Satu-satunya jasa ganti aki 24 jam di <strong>Cirebon, Majalengka, & Kuningan</strong> yang berani kasih harga termurah, jujur, respon kilat, dan teknisi ahli.
                 </p>
+
+                <!-- BANNER PROMO KHUSUS -->
+                <div id="promo" class="bg-gradient-to-r from-yellow-500 to-amber-600 text-slate-900 p-6 rounded-2xl shadow-xl mb-8 border-2 border-yellow-300 max-w-xl">
+                    <div class="flex items-center space-x-3 mb-2">
+                        <span class="bg-red-600 text-white text-xs font-black px-2.5 py-1 rounded-full uppercase animate-bounce">PROMO SPESIAL</span>
+                        <span class="text-xs font-bold text-white uppercase tracking-wider">Paling Murah Se-Cirebon!</span>
+                    </div>
+                    <div class="text-2xl md:text-3xl font-black text-white mb-1">
+                        Aki Mobil Mulai <span class="text-yellow-200 underline">Rp 650.000</span>
+                    </div>
+                    <p class="text-sm font-semibold text-slate-100 mb-4">✔ Sudah termasuk tukar tambah & gratis pasang di tempat!</p>
+                    <a href="https://wa.me/6285797475807?text=Halo%20saya%20tertarik%20dengan%20promo%20aki%20650rb%20tukar%20tambah" class="inline-flex items-center bg-slate-900 hover:bg-slate-800 text-white text-sm font-bold px-5 py-2.5 rounded-xl transition shadow-md">
+                        <i class="fab fa-whatsapp text-green-400 mr-2 text-lg"></i> Ambil Promo Sekarang
+                    </a>
+                </div>
+
                 <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-5">
-                    <a href="https://wa.me/6285797475807" class="bg-red-600 hover:bg-red-700 text-white text-center py-5 px-10 rounded-xl font-black text-xl shadow-2xl transition transform hover:-translate-y-1">
+                    <a href="https://wa.me/6285797475807" class="bg-red-600 hover:bg-red-700 text-white text-center py-4 px-8 rounded-xl font-black text-lg shadow-2xl transition transform hover:-translate-y-1">
                         PESAN AKI SEKARANG <i class="fas fa-arrow-right ml-2"></i>
                     </a>
                     <div class="flex items-center space-x-3 bg-white/10 backdrop-blur-sm p-4 rounded-xl">
@@ -145,7 +158,7 @@
                         <i class="fas fa-car text-3xl"></i>
                     </div>
                     <h3 class="text-xl font-bold mb-2">Aki Mobil</h3>
-                    <p class="text-slate-500 text-sm">Aki basah & kering untuk semua merk mobil Jepang, Eropa, & Amerika.</p>
+                    <p class="text-slate-500 text-sm">Aki basah & kering untuk semua merk mobil. Tersedia promo tukar tambah mulai 650rb!</p>
                 </div>
                 <div class="bg-white p-6 md:p-10 rounded-3xl shadow-sm border hover:border-red-600 transition group">
                     <div class="w-16 h-16 bg-red-50 text-red-600 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-red-600 group-hover:text-white transition">
@@ -203,171 +216,72 @@
 
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
                 <div class="bg-white/10 backdrop-blur-md p-8 rounded-3xl border border-white/10 hover:bg-white/20 transition">
-    <div class="flex text-yellow-400 text-xs mb-4">
-        <i class="fas fa-star"></i>
-        <i class="fas fa-star"></i>
-        <i class="fas fa-star"></i>
-        <i class="fas fa-star"></i>
-        <i class="fas fa-star"></i>
-    </div>
-    
-    <p class="text-sm italic mb-6 leading-relaxed text-white">
-        "Sangat puas dengan pelayanannya, pesan langsung dikirim ke rumah dan dipasangkan sekalian. Harganya sangat bersaing dan teknisinya sangat ramah. Recommended banget!"
-    </p>
-    
-    <div class="flex items-center space-x-3">
-        <div class="w-10 h-10 rounded-full bg-blue-600 flex items-center justify-center text-white font-bold">
-            R
-        </div>
-        <div>
-            <p class="text-xs font-bold text-white">Rully Maulana</p>
-            <div class="flex items-center">
-                <p class="text-[10px] text-blue-300">Local Guide</p>
-                <span class="mx-1 text-white/30">•</span>
-                <p class="text-[10px] text-white/50">21 ulasan</p>
-            </div>
-        </div>
-    </div>
-
-    <div class="mt-4 pt-4 border-t border-white/10 flex justify-between items-center">
-        <a href="https://goo.gl/maps/sZMKPeLbKE46gSwKA?g_st=ac" target="_blank" class="text-[10px] text-blue-400 hover:underline flex items-center">
-            <i class="fab fa-google mr-1"></i> Lihat ulasan asli di Google Maps
-        </a>
-        <span class="text-[9px] bg-green-500/20 text-green-400 px-2 py-0.5 rounded-full">Terverifikasi</span>
-    </div>
-</div>
-
+                    <div class="flex text-yellow-400 text-xs mb-4"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <p class="text-sm italic mb-6 leading-relaxed text-white">"Sangat puas dengan pelayanannya, pesan langsung dikirim ke rumah dan dipasangkan sekalian. Harganya sangat bersaing dan teknisinya sangat ramah. Recommended banget!"</p>
+                    <div class="flex items-center space-x-3">
+                        <div class="w-10 h-10 rounded-full bg-blue-600 flex items-center justify-center text-white font-bold">R</div>
+                        <div>
+                            <p class="text-xs font-bold text-white">Rully Maulana</p>
+                            <p class="text-[10px] text-blue-300">Local Guide</p>
+                        </div>
+                    </div>
+                </div>
                 <div class="bg-white/10 backdrop-blur-md p-8 rounded-3xl border border-white/10 hover:bg-white/20 transition">
-    <div class="flex text-yellow-400 text-xs mb-4">
-        <i class="fas fa-star"></i>
-        <i class="fas fa-star"></i>
-        <i class="fas fa-star"></i>
-        <i class="fas fa-star"></i>
-        <i class="fas fa-star"></i>
-    </div>
-    
-    <p class="text-sm italic mb-6 leading-relaxed text-white">
-        "Pelayanannya sangat memuaskan, fast respon dan harga aki sangat terjangkau dibanding tempat lain. Teknisi ahli dan alat cek akinya lengkap. Terima kasih Zona Aki Murah!"
-    </p>
-    
-    <div class="flex items-center space-x-3">
-        <div class="w-10 h-10 rounded-full bg-orange-600 flex items-center justify-center text-white font-bold">
-            A
-        </div>
-        <div>
-            <p class="text-xs font-bold text-white">Adit</p>
-            <div class="flex items-center">
-                <p class="text-[10px] text-blue-300">Local Guide</p>
-                <span class="mx-1 text-white/30">•</span>
-                <p class="text-[10px] text-white/50">Level 4</p>
-            </div>
-        </div>
-    </div>
-
-    <div class="mt-4 pt-4 border-t border-white/10 flex justify-between items-center">
-        <a href="https://goo.gl/maps/Pb1YyBxYDEfzEDJU8?g_st=ac" target="_blank" class="text-[10px] text-blue-400 hover:underline flex items-center">
-            <i class="fab fa-google mr-1"></i> Lihat ulasan asli
-        </a>
-        <span class="text-[9px] bg-green-500/20 text-green-400 px-2 py-0.5 rounded-full">Google Maps</span>
-    </div>
-</div>
-
+                    <div class="flex text-yellow-400 text-xs mb-4"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <p class="text-sm italic mb-6 leading-relaxed text-white">"Pelayanannya sangat memuaskan, fast respon dan harga aki sangat terjangkau dibanding tempat lain. Teknisi ahli dan alat cek akinya lengkap. Terima kasih Zona Aki Murah!"</p>
+                    <div class="flex items-center space-x-3">
+                        <div class="w-10 h-10 rounded-full bg-orange-600 flex items-center justify-center text-white font-bold">A</div>
+                        <div>
+                            <p class="text-xs font-bold text-white">Adit</p>
+                            <p class="text-[10px] text-blue-300">Local Guide</p>
+                        </div>
+                    </div>
+                </div>
                 <div class="bg-white/10 backdrop-blur-md p-8 rounded-3xl border border-white/10 hover:bg-white/20 transition">
-    <div class="flex text-yellow-400 text-xs mb-4">
-        <i class="fas fa-star"></i>
-        <i class="fas fa-star"></i>
-        <i class="fas fa-star"></i>
-        <i class="fas fa-star"></i>
-        <i class="fas fa-star"></i>
-    </div>
-    
-    <p class="text-sm italic mb-6 leading-relaxed text-white">
-        "Sangat terbantu sekali, malam-malam aki soak langsung diantar ke lokasi. Pelayanan cepat, ramah, dan harga jujur. Mantap pokoknya Zona Aki Murah!"
-    </p>
-    
-    <div class="flex items-center space-x-3">
-        <div class="w-10 h-10 rounded-full bg-green-700 flex items-center justify-center text-white font-bold">
-            S
-        </div>
-        <div>
-            <p class="text-xs font-bold text-white">Syarifudin</p>
-            <div class="flex items-center">
-                <p class="text-[10px] text-blue-300">Local Guide</p>
-                <span class="mx-1 text-white/30">•</span>
-                <p class="text-[10px] text-white/50">8 ulasan</p>
-            </div>
-        </div>
-    </div>
-
-    <div class="mt-4 pt-4 border-t border-white/10 flex justify-between items-center">
-        <a href="https://goo.gl/maps/y7oSuW3rtNnhFSkd9?g_st=ac" target="_blank" class="text-[10px] text-blue-400 hover:underline flex items-center">
-            <i class="fab fa-google mr-1"></i> Lihat ulasan asli
-        </a>
-        <span class="text-[9px] bg-green-500/20 text-green-400 px-2 py-0.5 rounded-full">Terpercaya</span>
-    </div>
-</div>
-
+                    <div class="flex text-yellow-400 text-xs mb-4"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <p class="text-sm italic mb-6 leading-relaxed text-white">"Sangat terbantu sekali, malam-malam aki soak langsung diantar ke lokasi. Pelayanan cepat, ramah, dan harga jujur. Mantap pokoknya Zona Aki Murah!"</p>
+                    <div class="flex items-center space-x-3">
+                        <div class="w-10 h-10 rounded-full bg-green-700 flex items-center justify-center text-white font-bold">S</div>
+                        <div>
+                            <p class="text-xs font-bold text-white">Syarifudin</p>
+                            <p class="text-[10px] text-blue-300">Local Guide</p>
+                        </div>
+                    </div>
+                </div>
                 <div class="bg-white/10 backdrop-blur-md p-8 rounded-3xl border border-white/10 hover:bg-white/20 transition">
-    <div class="flex text-yellow-400 text-xs mb-4">
-        <i class="fas fa-star"></i>
-        <i class="fas fa-star"></i>
-        <i class="fas fa-star"></i>
-        <i class="fas fa-star"></i>
-        <i class="fas fa-star"></i>
-    </div>
-    
-    <p class="text-sm italic mb-6 leading-relaxed text-white">
-        "Sangat puas, respon cepat dan ramah. Aki langsung diantar dan dipasang di tempat tanpa biaya tambahan yang aneh-aneh. Harga paling murah dibanding toko lain!"
-    </p>
-    
-    <div class="flex items-center space-x-3">
-        <div class="w-10 h-10 rounded-full bg-purple-700 flex items-center justify-center text-white font-bold">
-            S
-        </div>
-        <div>
-            <p class="text-xs font-bold text-white">Sujono Atmo</p>
-            <div class="flex items-center">
-                <p class="text-[10px] text-blue-300">Local Guide</p>
-                <span class="mx-1 text-white/30">•</span>
-                <p class="text-[10px] text-white/50">Level 5</p>
+                    <div class="flex text-yellow-400 text-xs mb-4"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <p class="text-sm italic mb-6 leading-relaxed text-white">"Sangat puas, respon cepat dan ramah. Aki langsung diantar dan dipasang di tempat tanpa biaya tambahan yang aneh-aneh. Harga paling murah dibanding toko lain!"</p>
+                    <div class="flex items-center space-x-3">
+                        <div class="w-10 h-10 rounded-full bg-purple-700 flex items-center justify-center text-white font-bold">S</div>
+                        <div>
+                            <p class="text-xs font-bold text-white">Sujono Atmo</p>
+                            <p class="text-[10px] text-blue-300">Local Guide</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
-
-    <div class="mt-4 pt-4 border-t border-white/10 flex justify-between items-center">
-        <a href="https://goo.gl/maps/M33X9CGjh4ajoxHg7?g_st=ac" target="_blank" class="text-[10px] text-blue-400 hover:underline flex items-center">
-            <i class="fab fa-google mr-1"></i> Lihat ulasan asli
-        </a>
-        <span class="text-[9px] bg-green-500/20 text-green-400 px-2 py-0.5 rounded-full">Google Maps</span>
-    </div>
-</div>
-
     </section>
 
     <section id="galeri" class="py-24 px-4 bg-white">
-  <div class="container mx-auto">
-    <h2 class="text-3xl font-black mb-12 text-center uppercase tracking-tighter">Bukti Layanan Kami</h2>
-    <div class="grid grid-cols-2 lg:grid-cols-4 gap-4">
-      
-      <div class="aspect-square bg-slate-100 rounded-3xl overflow-hidden border">
-        <img src="https://drive.google.com/thumbnail?id=1Nxo3m7A0iLcFgj77GxHqH8BbxmiiB6UP&sz=w1000" class="w-full h-full object-cover">
+      <div class="container mx-auto">
+        <h2 class="text-3xl font-black mb-12 text-center uppercase tracking-tighter">Bukti Layanan Kami</h2>
+        <div class="grid grid-cols-2 lg:grid-cols-4 gap-4">
+          <div class="aspect-square bg-slate-100 rounded-3xl overflow-hidden border">
+            <img src="https://drive.google.com/thumbnail?id=1Nxo3m7A0iLcFgj77GxHqH8BbxmiiB6UP&sz=w1000" class="w-full h-full object-cover">
+          </div>
+          <div class="aspect-square bg-slate-100 rounded-3xl overflow-hidden border">
+            <img src="https://drive.google.com/thumbnail?id=1IwI39293_HuBu-Y_Ove9-PZ6pcuot9P0&sz=w1000" class="w-full h-full object-cover">
+          </div>
+          <div class="aspect-square bg-slate-100 rounded-3xl overflow-hidden border">
+            <img src="https://drive.google.com/thumbnail?id=1P4JxMRereEEZSoj8RZVlDVKWSdg-VEUT&sz=w1000" class="w-full h-full object-cover">
+          </div>
+          <div class="aspect-square bg-slate-100 rounded-3xl overflow-hidden border">
+            <img src="https://drive.google.com/thumbnail?id=1RUyaiy2abnsLydb-gGaFwsUJehCWRVfF&sz=w1000" class="w-full h-full object-cover">
+          </div>
+        </div>
       </div>
-
-      <div class="aspect-square bg-slate-100 rounded-3xl overflow-hidden border">
-        <img src="https://drive.google.com/thumbnail?id=1IwI39293_HuBu-Y_Ove9-PZ6pcuot9P0&sz=w1000" class="w-full h-full object-cover">
-      </div>
-
-      <div class="aspect-square bg-slate-100 rounded-3xl overflow-hidden border">
-        <img src="https://drive.google.com/thumbnail?id=1P4JxMRereEEZSoj8RZVlDVKWSdg-VEUT&sz=w1000" class="w-full h-full object-cover">
-      </div>
-
-      <div class="aspect-square bg-slate-100 rounded-3xl overflow-hidden border">
-        <img src="https://drive.google.com/thumbnail?id=1RUyaiy2abnsLydb-gGaFwsUJehCWRVfF&sz=w1000" class="w-full h-full object-cover">
-      </div>
-
-    </div>
-  </div>
-</section>
+    </section>
 
     <section id="kontak" class="py-24 px-4">
         <div class="container mx-auto">
@@ -410,25 +324,20 @@
             <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-20">
                 <div class="col-span-1 md:col-span-2">
                     <img 
-    src="https://drive.google.com/thumbnail?id=1RvKQMFfXIDNVGSEIBZgU1-dL9ygtQFLY&sz=w500" 
-    alt="Logo Zona Aki" 
-    class="h-10 md:h-12 w-auto object-contain"
-  >
+                      src="https://drive.google.com/thumbnail?id=1RvKQMFfXIDNVGSEIBZgU1-dL9ygtQFLY&sz=w500" 
+                      alt="Logo Zona Aki" 
+                      class="h-10 md:h-12 w-auto object-contain"
+                    >
                     <div class="text-3xl font-black mb-6">ZONA AKI <span class="text-red-600">MURAH</span></div>
                     <p class="text-slate-400 max-w-sm mb-8">Pelopor layanan ganti aki 24 jam berbasis online di wilayah Cirebon, Majalengka, dan Kuningan. Kami memastikan perjalanan Anda kembali lancar tanpa kendala kelistrikan.</p>
-                    <div class="flex space-x-4">
-                        <a href="#" class="w-10 h-10 bg-white/5 flex items-center justify-center rounded-full hover:bg-blue-600 transition"><i class="fab fa-instagram"></i></a>
-                        <a href="#" class="w-10 h-10 bg-white/5 flex items-center justify-center rounded-full hover:bg-blue-600 transition"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" class="w-10 h-10 bg-white/5 flex items-center justify-center rounded-full hover:bg-blue-600 transition"><i class="fab fa-tiktok"></i></a>
-                    </div>
                 </div>
                 <div>
                     <h4 class="font-bold text-lg mb-6">Menu Cepat</h4>
                     <ul class="space-y-3 text-slate-400 text-sm">
                         <li><a href="#beranda" class="hover:text-white transition">Beranda</a></li>
+                        <li><a href="#promo" class="hover:text-white transition">Promo Spesial</a></li>
                         <li><a href="#produk" class="hover:text-white transition">Kategori Aki</a></li>
                         <li><a href="#ulasan" class="hover:text-white transition">Ulasan Pelanggan</a></li>
-                        <li><a href="#galeri" class="hover:text-white transition">Dokumentasi</a></li>
                     </ul>
                 </div>
                 <div>
@@ -442,17 +351,16 @@
                 </div>
             </div>
             <div class="pt-8 border-t border-white/5 text-center text-xs text-slate-500 font-medium">
-                © 2024 ZONA AKI MURAH EMERGENCY 24 JAM. DIKELOLA SECARA PROFESIONAL.
+                © 2026 ZONA AKI MURAH EMERGENCY 24 JAM. DIKELOLA SECARA PROFESIONAL.
             </div>
         </div>
     </footer>
 
-    <a href="https://wa.me/6285797475807?text=Halo%20saya%20mau%20order%20aki" class="float-wa bg-green-500 text-white w-20 h-20 rounded-[28px] flex items-center justify-center shadow-[0_20px_50px_rgba(34,197,94,0.4)] border-4 border-white">
+    <a href="https://wa.me/6285797475807?text=Halo%20saya%20mau%20order%20promo%20aki" class="float-wa bg-green-500 text-white w-20 h-20 rounded-[28px] flex items-center justify-center shadow-[0_20px_50px_rgba(34,197,94,0.4)] border-4 border-white">
         <i class="fab fa-whatsapp text-5xl"></i>
     </a>
 
     <script>
-        // Smooth scroll
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
